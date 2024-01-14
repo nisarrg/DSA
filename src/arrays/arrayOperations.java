@@ -14,7 +14,6 @@ TIME COMPLEXITIES OF ARRAY OPERATIONS:
 */
 
 public class arrayOperations {
-    // TODO : Perform above array operations.
     public void addElementToFullArray (int[] originalArray, int elementToAdd) {
         int[] newArray = Arrays.copyOf(originalArray, originalArray.length + 1);
         newArray[originalArray.length] = elementToAdd;
