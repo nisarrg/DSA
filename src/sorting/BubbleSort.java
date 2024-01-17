@@ -3,10 +3,10 @@ package sorting;
 public class BubbleSort {
     /*
      * Its performance degrades quickly as the size of the data structure increases
-     * It is in-place algorithm
-     * For sorting, we don't need to create any copy of the data structure
+     * It is in-place algorithm:
+         For sorting, we don't need to create any copy of the data structure
 
-     *TIME COMPLEXITY --> O(n^2)
+     *TIME COMPLEXITY --> O(n^2) : Quadratic
      *
      *
      */
@@ -38,29 +38,29 @@ public class BubbleSort {
 
     // CODE STARTS HERE
 
-    public void sort (int[] arrayToSort) {
+    public void sort(int[] arrayToSort) {
 
         System.out.println("========BEFORE SORTING========");
-        for (int i: arrayToSort) {
+        for (int i : arrayToSort) {
             System.out.println(i);
         }
 
-        for ( int lastUnsortedIndex = arrayToSort.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
+        for (int lastUnsortedIndex = arrayToSort.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
             for (int i = 0; i < lastUnsortedIndex; i++) {
-                if (arrayToSort[i] > arrayToSort[i+1]) {
-                    swap(arrayToSort, i, i+1);
+                if (arrayToSort[i] > arrayToSort[i + 1]) {
+                    swap(arrayToSort, i, i + 1);
                 }
             }
         }
 
         System.out.println("========AFTER SORTING========");
-        for (int i: arrayToSort) {
+        for (int i : arrayToSort) {
             System.out.println(i);
         }
         System.out.println("=====================");
     }
 
-    public void swap (int[] originalArray, int i, int j){
+    public void swap(int[] originalArray, int i, int j) {
         if (i == j) {
             return;
         }
