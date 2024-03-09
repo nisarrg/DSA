@@ -38,7 +38,9 @@ public class BubbleSort {
 
     // CODE STARTS HERE
 
-    public void sort(int[] arrayToSort) {
+    public void sort() {
+
+        int[] arrayToSort = {20, 35, -15, 7, 55, 1, -22};
 
         System.out.println("========BEFORE SORTING========");
         for (int i : arrayToSort) {
@@ -53,11 +55,10 @@ public class BubbleSort {
             }
         }
 
-        System.out.println("========AFTER SORTING========");
+        System.out.println("========BEFORE SORTING========");
         for (int i : arrayToSort) {
             System.out.println(i);
         }
-        System.out.println("=====================");
     }
 
     public void swap(int[] originalArray, int i, int j) {

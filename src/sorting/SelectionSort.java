@@ -8,8 +8,14 @@ public class SelectionSort {
      * Unstable algorithm --> if same element is present at two indices, then the order is not guaranteed.
      * */
 
+    /*
+    ===========PSEUDO CODE=========
 
-    public void sort(int[] arrayToSort) {
+    */
+
+    public void sort() {
+
+        int[] arrayToSort = {20, 35, -15, 7, 55, 1, -22};
 
         System.out.println("========BEFORE SORTING========");
         for (int i : arrayToSort) {
