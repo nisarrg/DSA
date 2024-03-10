@@ -64,5 +64,28 @@ public class Main {
 
         long timeTakenByQuickSort = end - begin;
         System.out.println("Time elapsed by Quick Sort: " + timeTakenByQuickSort + " ms!");
+
+
+        //Counting Sort
+
+        System.out.println("========BEFORE SORTING========");
+        for (int i : QuickSort.arrayToSort) {
+            System.out.println(i);
+        }
+
+        begin = System.currentTimeMillis();
+        CountingSort.sort(countSortArray, 1, 10);
+        end = System.currentTimeMillis();
+
+        System.out.println("========AFTER SORTING========");
+        for (int i : QuickSort.arrayToSort) {
+            System.out.println(i);
+        }
+
+        long timeTakenByCoutingSort = end - begin;
+        System.out.println("Time elapsed by Quick Sort: " + timeTakenByCoutingSort + " ms!");
+
+
+
     }
 }
